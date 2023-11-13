@@ -1,0 +1,21 @@
+{
+  "name": "todos-api",
+  "version": "1.0.0",
+  "description": "Restful API for todos",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx webpack --mode=production && mkdir -p target && spin js2wasm -o target/api.wasm dist/spin.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-loader": "^9.4.1",
+    "typescript": "^4.8.4",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "@fermyon/spin-sdk": "0.6.0"
+  }
+}
